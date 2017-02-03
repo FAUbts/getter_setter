@@ -10,6 +10,20 @@
 
 function User() {
   /* ваш код */
+  var firstName = "";
+  var surname = "";
+
+  this.setFirstName = function(Name){
+    firstName = Name;
+  }
+
+  this.setSurname = function(Name){
+    surname = Name;
+  }
+
+  this.getFullName = function(){
+    return firstName + " " + surname;
+  }
 }
 
 var user = new User();
